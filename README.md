@@ -26,22 +26,23 @@ dpi_output_format=0x6016
 
 we have 0x6016 =  110000000010110
 Here are the config variables : 
+```
+output_format: DPI_OUTPUT_FORMAT_18BIT_666_CFG2 0110
+rgb_order:   1: DPI_RGB_ORDER_RGB 		0010
+output_enable_mode 				0
+invert_pixel_clock     				0
 
--output_format: DPI_OUTPUT_FORMAT_18BIT_666_CFG2 0110
--rgb_order:   1: DPI_RGB_ORDER_RGB 0010
--output_enable_mode 0
--invert_pixel_clock     0
+hsync_disable          				0
+vsync_disable          				0
+output_enable_disable  				0
+hsync_polarity         				1
+vsync_polarity         				1
+output_enable_polarity 				0
 
--hsync_disable          0
--vsync_disable          0
--output_enable_disable  0
--hsync_polarity         1
--vsync_polarity         1
--output_enable_polarity 0
-
--hsync_phase            0
--vsync_phase            0
--output_enable_phase 0
+hsync_phase            				0
+vsync_phase            				0
+output_enable_phase 				0
+```
 
 If you have setup buildroot as described in https://github.com/recalbox/recalbox-os/wiki/Compilation-%26-Modifications-%28EN%29 and already built recalbox, you can compile the dts with :
 
